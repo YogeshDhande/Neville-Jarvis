@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content=" A portfolio is a purposeful collection of student work that tells the story of a student's personal self and a student's achievement or growth characterized by strong vision of content, skills and processes addressed, built on student selection of work going in and referenced to criteria.">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Portfolio Website">
+    <meta name="author" content="Yogesh Dhande">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" href="images/fav-icon.png">
+    <link rel="stylesheet"  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="index.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>About Us</title>
+</head>
+<body>
+    <header class="header">
+        <img src="/images/nlogo1.png" alt="Main-Logo" class="logo">
+
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="/index.html" class="nav-link home-link">Home</a></li>
+                <li><a href="/service.html" class="nav-link home-link">Services</a></li>
+                <li><a href="/portfolio.html" class="nav-link portfolio-link">Portfolio</a></li>
+                <li><a href="/contactus.html" class="nav-link contact-link">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- mobile Navbar Start -->
+        <div class="mobile-navbar">
+            <ion-icon name="list-outline" class="mobile-icon"></ion-icon>
+            <ion-icon name="close-outline" class="mobile-icon"></ion-icon>
+        </div>
+    </header>
+
+    <!-- Bio Data Section  -->
+    <section class="bio-section section">
+        <div class="container grid grid-two-col">
+            <div class="bio-img" data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
+                <img src="/images/bioimg.webp" alt="Bio-Data Images">
+            </div>
+            <div class="bio-data" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <h2 class="primary-heading">my bio-data</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias deleniti sapiente voluptas sunt repellat, id explicabo beatae odio libero velit quibusdam pariatur.</p>
+                <br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora maxime facere id ex illum.</p>
+                <div class="bio-data-stats">
+                    <div class="bio-stats">
+                        <h3>HTML</h3>
+                        <div class="bio-progress-bar">
+                            <span>85%</span>
+                        </div>
+                    </div>
+                    <div class="bio-stats">
+                        <h3>CSS</h3>
+                        <div class="bio-progress-bar bio-progress-2">
+                            <span>80%</span>
+                        </div>
+                    </div>
+                    <div class="bio-stats">
+                        <h3>JAVA</h3>
+                        <div class="bio-progress-bar bio-progress-3">
+                            <span>70%</span>
+                        </div>
+                    </div>
+                    <div class="bio-stats">
+                        <h3>JAVASCRIPT</h3>
+                        <div class="bio-progress-bar bio-progress-4">
+                            <span>60%</span>
+                        </div>
+                    </div>
+                    <div class="bio-stats">
+                        <h3>PYTHON</h3>
+                        <div class="bio-progress-bar bio-progress-5">
+                            <span>65%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bio-data-btn">
+                    <a href="https://drive.google.com/file/d/1k9Fp4uKD-C1mAAlQFN-qe1owhS4IirRE/view?usp=sharing" download target="_blank" class="btn">Download CV</a>
+                </div>
+            </div>
+        </div>    
+    </section>    
+
+
+     <!-- footer section  -->
+    <Footer class="section footer">
+        <div class="container grid grid-four-col">
+            <div class="f-about" data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
+                <h3>About Us</h3>
+                <p>We have tested a number of registry fix and clean utilities and present our top 3 list on our site for your convenience. Hope you like it.</p>
+            </div>
+
+            <div class="f-links" data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom">
+                <h3>Links</h3>
+                <ul>
+                    <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#hero-section">Home</a></li>
+                    <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="/aboutus.html">About</a></li>
+                    <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="/service.html">Services</a></li>
+                    <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#portfolio-section">Portfolio</a></li>
+                    <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="/contactus.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="f-service" data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom">
+                <h3>Services</h3>
+                <ul>
+                    <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#portfolio-section">Web Design</a></li>
+                    <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#portfolio-section">Frontend Developement</a></li>
+                    <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#portfolio-section">Backend Developement</a></li>
+                    <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#portfolio-section">Youtube</a></li>
+                    <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#portfolio-section">Freelancing</a></li>
+                </ul>
+            </div>
+
+            <div class="f-address"> 
+                <h3>Have a Questions?</h3>
+                <address>
+                  <div>
+                    <p><span><ion-icon name="location-outline"></ion-icon></span> <a href="https://goo.gl/maps/egiuCAXr4Xpg5F3z8">Pune, India</a> </p>
+                  </div>    
+                  <div>
+                    <p><span><ion-icon name="call-outline"></ion-icon></span> <a href="tel:+91987654321"> +91 987654321 </a></p>
+                  </div>
+                  <div>
+                    <p><span><ion-icon name="mail-outline"></ion-icon></span> <a href="mailto:info@nevillejarvis.com"> info@nevillejarvis.com </a> </p>
+                  </div>
+                </address>
+              </div>
+
+        </div>
+
+        <div class="container">
+            <div class="f-social-links">
+                <a href="https://www.instagram.com/?hl=en" target="_blank"><ion-icon class="icon" name="logo-instagram"></ion-icon></a>
+                <a href="https://www.facebook.com/" target="_blank"><ion-icon class="icon" name="logo-facebook"></ion-icon></a>
+                <a href="https://discord.com/" target="_blank"><ion-icon class="icon" name="logo-discord"></ion-icon></a>
+            </div>
+        </div>
+    </Footer>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>

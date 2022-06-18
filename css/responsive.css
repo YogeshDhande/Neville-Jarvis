@@ -1,0 +1,210 @@
+@import url(/css/index.css);
+@media(max-width:1500px){
+    .container{
+        max-width: 130rem;
+        padding: 0 3.2rem;
+    }
+    .nav-list{
+        gap: 3.2rem;
+    }
+}
+@media(max-width:1300px){
+    html{
+        font-size: 56.25%;
+    }    
+    .hero-section{
+        height: auto;
+    }
+    .container{
+        max-width: 110rem;
+    }
+    .grid{
+        gap: 4.8rem;
+    }
+}
+@media (max-width:980px) {
+    html{
+        font-size: 50%;
+    }
+    .hero-section{
+        height: auto;
+    }
+    .header{
+        position: relative;
+        padding: 0 4.2rem;
+    }
+    .mobile-navbar{
+        display: block;
+        z-index: 999;
+        /* border: 0.4rem solid #000; */
+    }
+    .mobile-icon{
+        width: 5rem;
+        height: 5rem;
+        color: var(--para-2);
+    }
+    .header .logo{
+        width: 25%;
+    }
+    .navbar{
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: var(--gradientNew);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.5s linear;
+        transform: translateX(100%);
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+        z-index: 999;
+    }
+    .active .navbar{
+        transform: translateX(0%);
+        visibility: visible;
+        opacity:1;
+        pointer-events: auto;
+    }
+    .active .mobile-navbar .mobile-icon[name="list-outline"]{
+        display: none;
+    }
+    .active .mobile-navbar .mobile-icon[name="close-outline"]{
+        display: block;
+        color: var(--bg);
+        width: 8rem;
+        height: 8rem;
+        margin-top: 5rem;
+    }
+    .nav-list{
+        flex-direction: column;
+        align-items: center;
+    }
+    .header .nav-link:link,
+    .header .nav-link:visited{
+       font-size: 3.2rem;
+       color: #000;
+    }
+    .services-section .grid{
+        gap: 6rem;
+    }
+    .services-section .grid-three-col{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .section-resume .grid-two-col{
+        grid-template-columns: 1fr;
+    }
+    .resume-img{
+        grid-row: 2;
+        transform: translateY(-2rem);
+    }
+    .section-resume .grid-two-col img{
+        width: 50%;
+    }
+    .footer .grid-four-col{
+        grid-template-columns: 1fr 1fr;
+    }
+    .img-overlay .primary-heading{
+        font-size: 3.2rem;
+    }
+}
+@media (max-width:790px){
+    .container{
+        max-width: 71rem;
+    }
+    .hero-section{
+        height: auto;
+    }
+    .hero-section .grid-two-col{
+        grid-template-columns: 1fr;
+    }
+    .hero-data{
+        align-items: center;
+    }
+    .hero-para{
+        text-align: center;
+        margin-top: 2rem;
+    }
+    .hero-section img{
+        width: 70%;
+    }
+    .bio-section .grid-two-col{
+        grid-template-columns: 1fr;
+    }
+    .bio-img{
+        grid-row: 2;
+        margin-top: 3.2rem;
+    }
+    .bio-section .bio-img img{
+        width: 60%;
+    }
+    .portfolio-section .grid-three-col{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .count-section .grid-four-col{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width:560px){
+    .hero-heading{
+        text-align: center;
+    }
+    .header{
+        padding: 0 3.2rem;
+    }
+    .header .logo{
+        width: 50%;
+    }
+    .portfolio-section .port-btn{
+        gap: 1.8rem;
+        flex-wrap: wrap;
+        padding: 0 6rem;
+    }
+    .btn{
+        padding: 1rem 2rem;
+    }
+    .count-number{
+        font-size: 3.2rem;
+    }
+    .portfolio-section .grid-three-col{
+        grid-template-columns: 1fr;
+        padding: 0 5.2rem;
+        gap: 3rem;
+    }
+    .img-overlay .primary-heading{
+        font-size: 4.2rem;
+    }
+    .services-section .grid-three-col{
+        grid-template-columns: 1fr;
+    }
+    .resume-data-subsection{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3.2rem;
+    }
+    .web-section h2{
+        font-size: 3rem;
+    }
+    .contact-container{
+        padding: 0 3.2rem;
+    }
+    .contact-section .grid-two-col{
+        grid-template-columns: 1fr;
+    }
+    .contact-main input[type="submit"]{
+        max-width: 50%;
+    }
+    .footer .f-about{
+        grid-column: 1/-1;
+    }
+    .footer .f-address{
+        grid-column: 1/-1;
+    }
+    .swiper {
+        width: 96%;
+      }
+}
